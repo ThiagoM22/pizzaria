@@ -128,5 +128,53 @@ header {
   box-shadow: -14px 10px 5px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: -14px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: -14px 10px 5px 0px rgba(0,0,0,0.75);
-  -
 }
+
+#BoasVinda{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  background: #f6f6f6
+}
+#BoasVinda img{
+  padding: 0 100px;
+  margin-bottom: 0;
+
+}
+#textoBV{
+  max-width: 600px;
+  padding-right: 100px;
+}
+#textoBV h4{
+text-transform: uppercase;
+font-size: 16px;
+margin: 0;
+padding-top: 20px;
+font-family: 'Times New Roman', Times, serif;
+}
+#textoBV h3{
+  text-transform: uppercase;
+  font-weight: 900;
+  color:#e7a200;
+  font-size: 23px;
+margin-bottom: 0;
+margin-top: 20px;
+}
+
+#textoBV p{
+margin-bottom: 0;
+}
+
+#cardapio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* #cardapio div{
+width: 100%;
+  display: flex;
+ flex-wrap:nowrap ;
+ justify-content: space-between;
+} */
