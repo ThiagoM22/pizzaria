@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+.fullcontainer {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  /* O conteudo é cortado e nenhuma barra de rolagem é exibida  */
+}
+
+.bgfundo {
+  background: url(https://placehold.co/1920x1080) no-repeat center/cover;
+  /* 
+       background-color: blue;
+       background-image: url(https://placehold.co/1920x1080); 
+       background-repeat: no-repeat;
+       background-position: center center;
+       background-size: cover;
+    */
+  width: 100%;
+  height: 700px;
+}
+
+header {
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: -moz-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.container {
+  max-width: 1073px;
+  margin: 0 auto;
+}
+.main-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.main-navigation ul {
+  list-style: none;
+  display: flex;
+  /* o comportamento de exibição será flexivel  */
+  gap: 28px;
+  align-items: center;
+  /* alinha os itens no centro  */
+  margin: 0;
+}
+
+.main-navigation a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: Helvetica, sans-serif;
+  border-bottom: solid 3px transparent;
+}
+.main-navigation a:hover,
+.main-navigation a:focus {
+  border-color: #e7a200;
+}
+
+.site-header-main {
+  display: flex;
+  justify-content: space-between;
+  height: 125px;
+}
+
+.sec-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* espaçamento entre as divs  */
+}
+
+.sec-menu ion-icon {
+  font-size: 25px;
+}
+
+#btnZap {
+  background: #e7a200;
+  border-radius: 65px;
+  padding: 0px 15px;
+  font-size: 20px;
+  font-weight: bolder;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.Zap{
+  text-decoration: none;
+  color: white;
+}
