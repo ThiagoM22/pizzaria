@@ -206,3 +206,27 @@ margin-bottom: 0;
   gap: 10px;
   padding-top: 20px;
 }
+
+#delivery{
+  max-height: 270px;
+  background: #ebe7db;
+  margin: 50px 0;
+  display: flex;
+justify-content: center;
+  /* centralizar conteudo no centro horizontalmente  */
+  align-items: center;
+  /* alinha os itens verticalmente;  */
+  gap: 100px;
+  text-align: center;
+}
+#delivery h1{
+  text-transform: uppercase;
+  color: #bf0a26;
+  font-weight: 900;
+}
+#delivery .sec-menu{
+  justify-content: center;
+  padding: 40px;
+}
+
+
