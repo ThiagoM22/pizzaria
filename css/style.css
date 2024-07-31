@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
 }
+/* adiciona atributos como margin 0 padding 0 e muda a fonte em toda a tag body */
 
 .fullcontainer {
   position: relative;
@@ -33,7 +34,7 @@ header {
   left: 0;
   right: 0;
   z-index: 1000;
-
+/* eixo z seria como uma profundidade, o z index determina quem estara na frente ou atras de outros itens  */
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.8) 0%,
@@ -65,6 +66,7 @@ header {
 
 .main-navigation ul {
   list-style: none;
+  /* tira os estilos da lista como */
   display: flex;
   /* o comportamento de exibição será flexivel  */
   gap: 28px;
@@ -117,78 +119,77 @@ header {
   gap: 7px;
 }
 
-.Zap{
+.Zap {
   text-decoration: none;
   color: white;
 }
-.ifood{
+.ifood {
   position: fixed;
   right: 0;
   top: 200px;
-  box-shadow: -14px 10px 5px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: -14px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: -14px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: -14px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -14px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -14px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-#BoasVinda{
+#BoasVinda {
   display: flex;
   justify-content: center;
   margin: 0 auto;
   padding-bottom: 15px;
-  background: #f6f6f6
+  background: #f6f6f6;
 }
-#BoasVinda img{
+#BoasVinda img {
   padding: 0 100px;
   margin-bottom: 0;
-
 }
-#textoBV{
+#textoBV {
   max-width: 600px;
   padding-right: 100px;
 }
-#textoBV h4{
-text-transform: uppercase;
-font-size: 16px;
-margin: 0;
-padding-top: 20px;
-font-family: 'Times New Roman', Times, serif;
+#textoBV h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 0;
+  padding-top: 20px;
+  font-family: "Times New Roman", Times, serif;
 }
-#textoBV h3{
+#textoBV h3 {
   text-transform: uppercase;
   font-weight: 900;
-  color:#e7a200;
+  color: #e7a200;
   font-size: 23px;
-margin-bottom: 0;
-margin-top: 20px;
+  margin-bottom: 0;
+  margin-top: 20px;
 }
 
-#textoBV p{
-margin-bottom: 0;
+#textoBV p {
+  margin-bottom: 0;
 }
 
-#cardapio{
+#cardapio {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#cardapio img{
+#cardapio img {
   padding: 36px 0;
 }
 
-#cardapio div img{
+#cardapio div img {
   padding: 0;
 }
 
-#cardapio h2{
-  color:#d03012;
+#cardapio h2 {
+  color: #d03012;
   text-transform: uppercase;
   font-size: 28px;
   font-weight: 700;
   margin: 0 0 7px 0;
 }
 
-.btmcardapio{
+.btmcardapio {
   text-decoration: none;
   color: #fff;
   background-color: #8daa3e;
@@ -197,7 +198,7 @@ margin-bottom: 0;
   border-bottom: 2px solid #6b7552;
 }
 
-#promopizzas{
+#promopizzas {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -207,26 +208,36 @@ margin-bottom: 0;
   padding-top: 20px;
 }
 
-#delivery{
+#delivery {
   max-height: 270px;
   background: #ebe7db;
   margin: 50px 0;
   display: flex;
-justify-content: center;
+  justify-content: center;
   /* centralizar conteudo no centro horizontalmente  */
   align-items: center;
   /* alinha os itens verticalmente;  */
   gap: 100px;
   text-align: center;
 }
-#delivery h1{
+#delivery h1 {
   text-transform: uppercase;
   color: #bf0a26;
   font-weight: 900;
 }
-#delivery .sec-menu{
+#delivery .sec-menu {
   justify-content: center;
   padding: 40px;
 }
 
-
+#icon {
+  display: flex;
+  justify-content: center;
+  /* centraliza o conteudo ou seja o bloco com o conjunto de itens */
+  gap: 70px;
+  margin: 20px 0;;
+}
+.itens {
+  max-width: 250px;
+  text-align: center;
+}

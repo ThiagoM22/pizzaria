@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8"> <!--Acentuação para leitura global-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de Customização</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 2px solid black;
+        }
+
+        .SemBorda>td {
+            border: none;
+        }
+
+        .bunitinho {
+            color: rgb(213, 0, 64);
+            font-size: 15pt;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+
+</head>
+
+<body style="font-size: 10pt; font-family: 'Courier New', Courier, monospace;">
+    <p
+        style="background-color: rgb(213, 0, 64); color: rgb(255, 255, 255); font-size: 28pt; font-family: 'Courier New', Courier, monospace; text-align: center;">
+        TAGS DE CUSTOMIZAÇÃO</p>
+    <p class="bunitinho" style="text-align: center;"><b>09/02/2023</b></p>
+
+    <br>
+    <p class="bunitinho"><b>PARA TEXTOS</b></p>
+    <p>Texto em negrito com <b>bold</b> e <strong>strong</strong></p>
+    <!--Bold é para visual, Strong é para o leitor de tela-->
+    <p>Texto em itálico com <i>italics</i> e <em>emphasis</em></p>
+    <!--Italics é para o visual, Emphasis é para o leitor de tela-->
+    <p>Texto sobrescrito com <sup>sup</sup> e subscrito com <sub>sub</sub></p>
+    <p>Texto sublinhado com <ins>ins</ins> e riscado com <del>del</del></p>
+    <p>Texto pequeno com <small>small</small> e grifado com <mark>mark</mark></p>
+    <p>Diferença entre potência normal 3² e com sup 3<sup>2</sup> (<mark>3²</mark> e <mark>3<sup>2</sup></mark>)</p>
+    <p>Posso colocar <i><ins>mais de uma</ins></i> característica? <b><mark>SIM!</mark></b></p>
+    <p>Tem como grifar o <sup><mark>sup</mark></sup> e o <sub><mark>sub</mark></sub></p>
+
+    <br>
+    <p class="bunitinho"><b>PARA IMAGENS</b></p>
+    <img src="semImagem" título="Sem Imagem" alt="A imagem não existe" />
+    <br>
+    <img src="Imagem HTML.webp" width="100%" título="Imagem 1"
+        alt="Vetores de Desenvolvimento de Sistemas, Computador, Celular e Linguagens de Programação" />
+    <a
+        href="https://amplificadigital.com.br/wp-content/uploads/2019/12/amplifica_banner_blog_programaccca7acc83o.webp"></a>
+
+    <br>
+    <p class="bunitinho"><b>PARA LINKS</b></p>
+    <a href="https://google.com" target="_blank">Clique aqui para a acessar o Google</a>
+    <!--com o Target Black, o link abre em uma nova guia. Sem, o link abre substituindo a página atual-->
+
+    <br>
+    <p class="bunitinho"><b>PARA TABELAS</b></p>
+    <table>
+        <tr> <!--tr são as linhas, td são as colunas, thead o cabeçalho, tbody o corpo, tfoot o rodapé-->
+            <td>Linha 1, Coluna 1</td>
+            <td>Linha 1, Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Linha 2, Coluna 1</td>
+            <td>Linha 2, Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Linha 3, Coluna 1</td>
+            <td>Linha 3, Coluna 2</td>
+        </tr>
+    </table>
+
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th> Produto </th>
+                <th> Preço </th>
+                <th> Quantidade </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Feijão</td>
+                <td>R$8,75</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Arroz</td>
+                <td>R$4,99</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="SemBorda">
+                <td>Total</td>
+                <td></td>
+                <td>R$18,73</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+    <p class="bunitinho"><b>PARA LISTAS</b></p>
+    <p><b>Listas ordenadas:</b></p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <ol type="a">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <ol type="I">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <p><b>Listas não ordenadas:</b></p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <p><b>Lista de definição</b></p>
+    <dl>
+        <dt>Título 1</dt>
+        <dd>Definição 1</dd>
+        <dt>Título 2</dt>
+        <dd>Definição 2</dd>
+        <dt>Título 3</dt>
+        <dd>Definição 3</dd>
+    </dl>
+
+    <br>
+    <p class="bunitinho"><b>PARA FORMULÁRIOS</b></p>
+
+
+    <br>
+    <p class="bunitinho"><b>PARA ÁUDIO</b></p>
+    <p> Criar um botão de áudio</p>
+    <audio controls src="Labrinth - Mount Everest.mp3">
+        Seu brownser não suporta áudio
+    </audio>
+
+    <br>
+    <p>Os arquivos serão buscados na ordem em que aparecem na lista.</p>
+    <audio controls src="musica.mp3">
+        <source src="musica.ogg" type="audio/ogg">
+        <source src="musica.mp3" type="audio/mp3">
+    </audio>
+
+    <br>
+    <p class="bunitinho"><b>PARA VÍDEO</b></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xVQQNe30IJU?si=HF5aF9Hihg2NGuMp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <p class="bunitinho"><b>DIV E SPAN</b></p>
+    <input type="text" value="input 1">
+    <input type="text" value="input 2">
+    <div><input type="text" value="input 3"></div>
+    <div><input type="text" value="input 4"></div>
+
+    <br> <!--É necessário definir o style para o SPAN funcionar-->
+    <p>Este é um texto com um <span>trecho em destaque</span> </p>
+    <p>Este é um texto com um <span style="background: #1abc9c; border-radius: 5px; padding: 5px;">
+            trecho em destaque</span></p>
+
+    <h2 class="bunitinho">FORMULÁRIOS</h2>
+
+    <div style="width: fit-content;">
+        <form action="" method="post">
+            <h3>Entre em contato</h3>
+            <p><small>Ficaremos felizes em atende-lo</small></p>
+            <p>
+                <input type="text" name="nome" value="Nome" placeholder="Nome" size="40" required>
+                <br>
+                <input type="email" name="e-mail" placeholder="E-mail" size="40" required>
+                <br>
+                <textarea name="mensagem" placeholder="Mensagem" cols="40" rows="10" minlength="50" required></textarea>
+                <br>
+            <div style="display: flex; justify-content: center;">
+                <input type="submit" value="Enviar">
+            </div>
+            </p>
+        </form>
+    </div>
+
+    <h2>Listas em DIV</h2>
+    <div style="display: flex; justify-content:space-evenly; flex-wrap: wrap;">
+        
+        <div>
+            <h4>Lista Ordenada</h4>
+            <ol>
+                <li>Texto</li>
+                <li>Texto</li>
+                <li>Texto</li>
+                <li>Texto</li>
+                <li>Texto</li>
+                <li>Texto</li>
+            </ol>
+        </div>
+
+        <div>
+        <h4>Lista Não Ordenada</h4>
+            <ul>
+                <li>Texto</li>
+                <li>Texto</li>
+                <li>Texto</li>
+                <li>Texto</li>
+                <li>Texto</li>
+                <li>Texto</li>
+            </ul>
+        </div>
+        
+        <div>
+        <h4>Lista Não Ordenada</h4>
+            <ul>
+                <li>Texto</li>
+                <li>Texto</li>
+                <li>Texto</li>
+                <li>Texto</li>
+                <li>Texto</li>
+                <li>Texto</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
