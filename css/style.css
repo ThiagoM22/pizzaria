@@ -34,7 +34,7 @@ header {
   left: 0;
   right: 0;
   z-index: 1000;
-/* eixo z seria como uma profundidade, o z index determina quem estara na frente ou atras de outros itens  */
+  /* eixo z seria como uma profundidade, o z index determina quem estara na frente ou atras de outros itens  */
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.8) 0%,
@@ -124,6 +124,7 @@ header {
   color: white;
 }
 .ifood {
+  z-index: 10;
   position: fixed;
   right: 0;
   top: 200px;
@@ -235,9 +236,115 @@ header {
   justify-content: center;
   /* centraliza o conteudo ou seja o bloco com o conjunto de itens */
   gap: 70px;
-  margin: 20px 0;;
+  margin: 20px 0;
 }
 .itens {
   max-width: 250px;
   text-align: center;
 }
+#contato iframe {
+  position: absolute;
+}
+#contato {
+  display: flex;
+  justify-content: center;
+}
+
+.forms {
+  z-index: 2;
+  width: 530px;
+  max-width: 100%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  display: block;
+  background: #fff;
+  padding: 48px 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.forms h2 {
+  color: #e7a200;
+  font-size: 28px;
+  line-height: 80px;
+}
+.forms p {
+  margin: 0;
+  margin-top: -12px;
+  margin-bottom: 13px;
+}
+.forms small {
+  color: #333;
+  margin-top: -20px;
+  margin-bottom: 13px;
+  font-size: 14px;
+}
+.forms input,
+.forms textarea {
+  padding: 0 16px;
+  line-height: 36px;
+  background: transparent;
+  border-radius: 12px;
+  border: solid 2px #999;
+  font-weight: 400;
+  font-size: 14px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.forms form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forms input[type="submit"] {
+  background: #e7a200;
+  border-color: #e7a200;
+  width: 155px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 20px;
+}
+footer {
+  background: #e7a200;
+  min-height: 400px;
+  margin-top: -371px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+footer #dados {
+  display: flex;
+  margin: 0 14%;
+  justify-content: space-between;
+}
+
+
+#dados p,
+#dados h4 {
+  margin: 0;
+}
+
+
+#dados h4 {
+  margin-top: 10px;
+}
+
+
+footer #dados:first-child {
+  margin-left: 20%;
+}
+
+
+#copyright {
+  text-align: center;
+  margin-top: 100px;
+}
+textarea{
+  resize: none;
+}
+
