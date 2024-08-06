@@ -86,7 +86,7 @@ header {
 }
 .main-navigation a:hover,
 .main-navigation a:focus {
-  border-color: #e7a200;
+  border-color: #c80404d9;
 }
 
 .site-header-main {
@@ -107,7 +107,7 @@ header {
 }
 
 #btnZap {
-  background: #e7a200;
+  background: #c80404d9;
   border-radius: 65px;
   padding: 0px 15px;
   font-size: 20px;
@@ -156,7 +156,7 @@ header {
 #textoBV h3 {
   text-transform: uppercase;
   font-weight: 900;
-  color: #e7a200;
+  color: #c80404d9;
   font-size: 23px;
   margin-bottom: 0;
   margin-top: 20px;
@@ -261,7 +261,7 @@ header {
 }
 
 .forms h2 {
-  color: #e7a200;
+  color: #c80404d9;
   font-size: 28px;
   line-height: 80px;
 }
@@ -296,8 +296,8 @@ header {
 }
 
 .forms input[type="submit"] {
-  background: #e7a200;
-  border-color: #e7a200;
+  background: #c80404d9;
+  border-color: #c80404d9;
   width: 155px;
   border-radius: 50px;
   color: #fff;
@@ -305,7 +305,7 @@ header {
   margin-top: 20px;
 }
 footer {
-  background: #e7a200;
+  background: #c80404d9;
   min-height: 400px;
   margin-top: -371px;
   color: #fff;
@@ -314,37 +314,42 @@ footer {
   justify-content: space-evenly;
 }
 
-
 footer #dados {
   display: flex;
-  margin: 0 3%;
+  margin: 0 14%;
   justify-content: space-between;
 }
-
 
 #dados p,
 #dados h4 {
   margin: 0;
 }
 
-
 #dados h4 {
   margin-top: 10px;
 }
-
-
-footer #dados:first-child {
-  margin-left: 15%;
+#dados h3 {
+  text-align: center;
 }
 
+footer #dados:first-child {
+  margin-left: 22%;
+}
 
 #copyright {
   text-align: center;
   margin-top: 215px;
-  
 }
-textarea{
+textarea {
   resize: none;
 }
+.zoom {
+  transition: transform 0.2s;
+}
+/* cria uma transição que transforma o conteudo com o tempo de 0.2 segundos  */
 
-
+.zoom:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.6));
+  /* aumenta a escala do conteudo e adiciona uma sombra  */
+}
