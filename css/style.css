@@ -128,9 +128,7 @@ header {
   position: fixed;
   right: 0;
   top: 200px;
-  box-shadow: -14px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -14px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -14px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  filter: drop-shadow(-2px 4px 6px black);
 }
 
 #BoasVinda {
