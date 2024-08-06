@@ -319,7 +319,7 @@ footer {
 
 footer #dados {
   display: flex;
-  margin: 0 14%;
+  margin: 0 3%;
   justify-content: space-between;
 }
 
@@ -336,15 +336,17 @@ footer #dados {
 
 
 footer #dados:first-child {
-  margin-left: 20%;
+  margin-left: 15%;
 }
 
 
 #copyright {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 215px;
+  
 }
 textarea{
   resize: none;
 }
+
 
